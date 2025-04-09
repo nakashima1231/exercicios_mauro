@@ -6,7 +6,7 @@ int main(void) {
   while( x < 20 ) {
     x++;      
     if( x % 3 == 0 ) {
-      continue; // salta para a condição quando x == 3
+      continue;
     }
     printf("%d ", x);
   }
