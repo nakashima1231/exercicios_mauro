@@ -15,6 +15,14 @@ void dobro(float x[]) {
     }
 }
 
+void maior(float x[]) {
+    if (x[0] < x[1]) {
+        float temp = x[0];
+        x[0] = x[1];
+        x[1] = temp;
+    }
+}
+
 int main() {
     float numeros[DOIS];
     float mediaa;
@@ -30,6 +38,10 @@ int main() {
 
     mediaa = media(numeros);
     printf("A média é: %f\n", mediaa);
+
+    printf("Antes: %f %f\n", numeros[0], numeros[1]);
+    maior(numeros);
+    printf("Depois: %f %f\n", numeros[0], numeros[1]);
     
     printf("Vetores antes do dobro: %f\n", numeros[1]);
     printf("Vetores antes do dobro: %f\n", numeros[0]);
@@ -39,5 +51,7 @@ int main() {
     printf("Vetores depois do dobro: %f\n", numeros[1]);
     printf("Vetores depois do dobro: %f\n", numeros[0]);
 
+    
+    
     return 0;
 }
