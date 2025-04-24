@@ -3,17 +3,14 @@
 
 int main() {
     float nota[QUATRO];
-    float media = 0;
+    float total = 0;
 
     for(int i = 0; i < QUATRO; i++) {
         printf("Digite a nota: ");
         scanf("%f", &nota[i]);
-        media += nota[i];
+        total += nota[i];
     }
-
-    media /= QUATRO;
-
-    printf("A média é: %.2f\n", media);
+    printf("O total é: %.2f\n", total);
 
     return 0;
 }
