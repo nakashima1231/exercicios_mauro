@@ -1,13 +1,11 @@
-// PRECISO ARRUMAR!!!!!!!!!!!!!!!!!!!!!
-
-
+// PRECISO ARRUMAR E REVER !!!!!!!!!!!!!!!!!!!!!
 
 #include <stdio.h>
 #include <string.h>
 
 int main(){
-    char senha[5] = "azimo";
-    char senhadig[5];
+    char senha[6] = "azimo";
+    char senhadig[6];
     int tentativas = 3;
     int resultado = 0;
 
@@ -20,7 +18,7 @@ int main(){
 
         if(resultado ==0) {
             printf("Seja bem vindo!\n");
-            resultado = 0;
+            return 0;
         } else {
             printf("%d\n", resultado);
             printf("%s\n", senha);
@@ -34,7 +32,5 @@ int main(){
         printf("Tente novamente mais tarde.\n");
     }
         
-    
-
     return 0;
 }
