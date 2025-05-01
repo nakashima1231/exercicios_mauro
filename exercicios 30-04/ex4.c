@@ -27,9 +27,5 @@ int main() {
 
     }while(tentativas > 0);
 
-    
-
-
-
     return 0;
 }
