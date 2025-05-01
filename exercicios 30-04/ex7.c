@@ -1,5 +1,3 @@
-// PRECISO ARRUMAR E REVER !!!!!!!!!!!!!!!!!!!!!
-
 #include <stdio.h>
 #include <string.h>
 
@@ -12,21 +10,18 @@ int main(){
     do {
         tentativas--;
         printf("Digite sua senha: ");
-        scanf("%s", senhadig);
+        scanf("%5s", senhadig);
 
         resultado = strcmp(senha, senhadig);
 
         if(resultado ==0) {
             printf("Seja bem vindo!\n");
-            return 0;
+            break;
         } else {
-            printf("%d\n", resultado);
-            printf("%s\n", senha);
-            printf("%s\n", senhadig);
             printf("Senha errada. Tentativas restantes: %d\n", tentativas);
         }
 
-    }while(tentativas > 0);
+    }while(tentativas > 0 && resultado !=0);
 
     if(resultado !=0) {
         printf("Tente novamente mais tarde.\n");
